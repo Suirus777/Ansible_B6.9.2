@@ -24,7 +24,7 @@ Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-135-generic x86_64)<br><br>
 <br>
 Last login: Wed Dec  7 09:58:34 2022 from 192.168.1.111 <br>
 user2@devops1:~$ sudo -i  <br>
-root@devops1:~#  <br>
+root@devops1:~#  <br> </B>
 <br>
 3. Самостоятельно напишите Ansible-роль, настраивающую связку nginx+php-fpm и выдающую при обращении к главной странице веб-сервера информацию о php <br>
 (содержимое index.php — <?php phpinfo();?>).<br>

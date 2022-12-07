@@ -30,6 +30,8 @@ root@devops1:~#  <br>
 (содержимое index.php — <?php phpinfo();?>).<br>
 Ответ: Была создана роль nginx+php-fpm. Были созданы настройки сайта для nginx и работы php-fpm. <br>
 Результат: Playbook успешно отработал: <br>
+   Страница index.php с кодом <?php phpinfo();?> успешно отрабатывает. <br>
+   Результат можно увидеть на скриншоте: phpifo.JPG  <br><br>
 
 
 <br>

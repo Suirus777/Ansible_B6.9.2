@@ -13,8 +13,8 @@
   - name: Add user3 to remote hosts
     become: yes
     user: 
-      name: user4 
-      home: /home/user4
+      name: user3
+      home: /home/user3
       shell: /bin/bash
 
   - name: create group "superusers"
@@ -33,7 +33,7 @@
   - name: add user3 to new group "superusers"
     become: yes
     user:
-      name: user4
+      name: user3
       groups: superusers
       append: yes
 
@@ -46,7 +46,7 @@
   - name: Add SSH keys for User3 to remote hosts
     become: yes
     authorized_key: 
-      user: user4
+      user: user3
       key: "{{ lookup('file', '/root/.ssh/user3.pub') }}"
 
   - name: Adding User2 to sudoers
@@ -60,5 +60,5 @@
     become: yes
     lineinfile:
       dest: /etc/sudoers
-      line: "user4 ALL=(ALL)  NOPASSWD: ALL"
+      line: "user3 ALL=(ALL)  NOPASSWD: ALL"
       validate: 'visudo -cf %s'

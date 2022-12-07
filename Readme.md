@@ -4,10 +4,10 @@
 1. Создайте Ansible-роль, настраивающую кэширующий DNS-сервер dnsmasq. Примените ее. <br>
    Ответ: Была создана и настроена удалённом сервере  роль: <b>dnsmasq </b><br>
    Результат: Сервер был полность развёрнут и настроен при помощи Ansible <br>
-odmin@devops1:~$ ps aux | grep dnsmasq <br>
+<b>odmin@devops1:~$ ps aux | grep dnsmasq <br>
 dnsmasq      708  0.0  0.2  12308  2620 ?        S    13:38   0:00 /usr/sbin/dnsmasq -x /run/dnsmasq/dnsmasq.pid -u <br>
 dnsmasq -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service <br>
---trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d <br>
+--trust-anchor=.,20326,8,2,e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d <br></b>
        <br>
 2. Напишите Ansible-playbook, создающий группу пользователей superusers, куда входят пользователи user2 и user3, и которая, выполнив sudo -i, <br> 
 сможет повысить свои полномочия и стать root-пользователем.Можете использовать модуль lineinfile. У него есть параметр validate, позволяющий <br>
